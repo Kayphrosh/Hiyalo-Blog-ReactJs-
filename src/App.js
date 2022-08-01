@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import BlogContainer from './components/BlogContainer';
 import MainFooter from './components/Footer';
@@ -16,7 +16,7 @@ import HeIsMarried from './components/blog7';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <NavBar />
           <div>
@@ -31,10 +31,10 @@ class App extends Component {
               <Route path="/blog/he-is-married" element={<HeIsMarried />} />
             </Routes>
           </div>
-
+          
           <MainFooter />
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
