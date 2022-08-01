@@ -5,7 +5,7 @@ import BlogNewsletter from './BlogNewsletter';
 import FirstBlogImg from '../images/5th-blog-img.jpeg';
 import firstMeme from '../images/7th-blog-meme-1.png';
 import secondMeme from '../images/7th-blog-meme-2.jpeg';
-import forthMeme from '../images/5th-blog-meme-4.jpeg';
+// import forthMeme from '../images/5th-blog-meme-4.jpeg';
 // import fifthMeme from '../images/5th-blog-meme-5.jpeg';
 
 const HeIsMarried= () => {
